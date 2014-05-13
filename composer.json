@@ -1,5 +1,24 @@
 {
+    "name": "42mate/towel-standard",
+    "description": "Towel framework project structure.",
+    "keywords": ["Silex", "Dbal", "Twig", "MVC", "PHP", "Easy"],
+    "homepage": "https://github.com/42mate/towel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Casiva Agustin",
+            "email": "agustin@42mate.com",
+            "homepage": "http://www.42mate.com"
+        },
+        {
+            "name": "Pintos Ezequiel",
+            "email": "ezequiel@42mate.com",
+            "homepage": "http://www.42mate.com"
+        }
+    ],
     "require": {
+        "php": ">=5.4",
         "silex/silex": "~1.1",
         "symfony/browser-kit": "~2.3",
         "symfony/console": "~2.3",
@@ -12,7 +31,6 @@
         "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
         "42mate/towel": "dev-master"
     },
-
     "autoload": {
         "psr-0": {
             "Frontend": "frontend/"
