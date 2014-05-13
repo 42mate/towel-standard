@@ -21,6 +21,7 @@ Contributors
 If want to contribute to Towel's core you'll need to do a few extra steps (no worries, they're not much).
 
 After downloading towel-standard:
+
 1 - Edit composer.json located at the root folder.
 
    1.1 - Delete the line: "42mate/towel": "xxx" (and the previous "," if "42mate/towel": "xxxx" was the last item in the "require" section)
