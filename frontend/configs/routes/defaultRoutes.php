@@ -1,16 +1,13 @@
 <?php
 
-use Symfony\Component\HttpFoundation\Request;
-
-$controller = new Towel\MVC\Controller\BaseController;
-
-// Routes
-$app->get('/', function (Request $request) use ($controller) {
-    return $controller->index();
-});
+add_route('get', '/', array(
+    'controller' => new Towel\MVC\Controller\BaseController(),
+    'action' => 'index',
+));
 
 if ($appConfig['debug']) {
-    $app->error(function (\Exception $e) use ($controller) {
+    get_app()->silex()->error(function (\Exception $e)  {
+        $controller = new Towel\MVC\Controller\BaseController();
         return $controller->routeError($e);
     });
 }
