@@ -7,11 +7,11 @@ Install
 =======
 Start by installing composer oin any prefered folder
 
-````$ curl -s https://getcomposer.org/installer | php`````
+````bash $ curl -s https://getcomposer.org/installer | php````
 
 After that, run composer to create Towel project's folder structure.
 
-```$ php composer.phar create-project --no-interaction 42mate/towel-standard /path/to/towel-project-folder dev-master```
+```bash php composer.phar create-project --no-interaction 42mate/towel-standard /path/to/towel-project-folder dev-master```
 
 After that you'll have a fully operational Towel instance to start coding your application.
 
@@ -34,7 +34,7 @@ After downloading towel-standard:
 
 4 - Go to /path/to/towel-project-folder/vendor and run it 
 
-    ```git clone git@github.com:YourUserName/towel.git 42mate/towel```
+    ```bash git clone git@github.com:YourUserName/towel.git 42mate/towel```
     
     After cloning Towel core, you only need to setup your favourite http server to serve pages from Towel's application.
 
