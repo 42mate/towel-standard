@@ -7,11 +7,15 @@ Install
 =======
 Start by installing composer oin any preferred folder
 
-```` $ curl -s https://getcomposer.org/installer | php````
+````
+   curl -s https://getcomposer.org/installer | php
+````
 
 After that, run composer to create Towel project's folder structure.
 
-``` php composer.phar create-project --no-interaction 42mate/towel-standard /path/to/towel-project-folder dev-master```
+```
+    php composer.phar create-project --no-interaction 42mate/towel-standard /path/to/towel-project-folder dev-master
+```
 
 After that you'll have a fully operational Towel instance to start coding your application.
 
@@ -25,7 +29,9 @@ Fork the Towel Standard repository (click on the "Fork" button)
 
 After the "forking action" has completed, clone your fork locally
 
-```git clone git@github.com:USERNAME/towel-standard.git```
+```
+   git clone git@github.com:USERNAME/towel-standard.git
+```
 
 Add the upstream repository as a remote (for update your fork).
 
@@ -41,17 +47,17 @@ Run composer update to install all dependencies.
 To update your fork with the main repo do the following
 
 ```
- cd towel-standard
- git checkout master
- git fetch upstream
- git merge upstream/master
+  cd towel-standard
+  git checkout master
+  git fetch upstream
+  git merge upstream/master
 ```
 
 Do your changes and then commit and push your changes
 
 ```
- git commit .... your params ...
- git push origin master
+  git commit .... your params ...
+  git push origin master
 ```
 
 After that create a new pull request in your fork page in github and we are going
