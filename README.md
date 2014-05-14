@@ -34,7 +34,7 @@ After downloading towel-standard:
 
 4 - Go to /path/to/towel-project-folder/vendor and run it 
 
-```git clone git@github.com:YourUserName/towel.git 42mate/towel```
+  ```git clone git@github.com:YourUserName/towel.git 42mate/towel```
     
 6 - After cloning Towel core, you only need to setup your favourite http server to serve pages from Towel's application.
 
