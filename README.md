@@ -1,11 +1,11 @@
 Towel Standard
 ==============
 
-This the standar folder structure for any Towel project
+This the standard folder structure for any Towel project
 
 Install
 =======
-Start by installing composer oin any prefered folder
+Start by installing composer oin any preferred folder
 
 ```` $ curl -s https://getcomposer.org/installer | php````
 
@@ -15,33 +15,9 @@ After that, run composer to create Towel project's folder structure.
 
 After that you'll have a fully operational Towel instance to start coding your application.
 
-Contributors
-============
 
-If want to contribute to Towel's core you'll need to do a few extra steps (no worries, they're not much).
-
-After downloading towel-standard:
-
-1 - Edit composer.json located at the root folder.
-
-   1.1 - Delete the line: "42mate/towel": "xxx" (and the previous "," if "42mate/towel": "xxxx" was the last item in the "require" section)
-   
-   1.2 - Add: "Towel": "vendor/42mate/towel/src" in the "psr-0" section
-
-2 - Go to /path/to/towel-project-folder and run php composer.phar update, let composer do its magic.
-
-3 - Fork Towel repository with your git account.
-
-4 - Go to /path/to/towel-project-folder/vendor and run it 
-
-  ```git clone git@github.com:YourUserName/towel.git 42mate/towel```
-    
-6 - After cloning Towel core, you only need to setup your favourite http server to serve pages from Towel's application.
-
-7 - Start your contributions!
-
-Manual Installation for Contributors
-====================================
+Contributions to Towel Standard
+===============================
 
 Go to Github with your github account.
 
@@ -59,19 +35,6 @@ Add the upstream repository as a remote (for update your fork).
 ```
 
 Run composer update to install all dependencies.
-
-## Contributions to towel core ##
-
-Delete towel core from vendors and Clone your fork of towel core.
-
-```
-   cd towel-standard
-   rm -rf vendors/42mate/towel
-   cd vendors/42mate/towel
-   git clone git@github.com:USERNAME/towel.git
-   cd towel
-   git remote add upstream git://github.com/42mate/towel.git
-```
 
 ## Update your fork ##
 
