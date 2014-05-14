@@ -2,13 +2,13 @@
 
 global $appConfig;
 
-define('APP_ROOT_DIR', dirname(__FILE__) . '/../..');
+define('APP_ROOT_DIR', dirname(__FILE__) . '/../../..');
 define('APP_WEB_DIR', APP_ROOT_DIR . '/web');
 define('APP_UPLOADS_DIR', APP_WEB_DIR . '/uploads');
 define('APP_LIB_DIR', APP_ROOT_DIR . '/vendor');
 define('APP_FW_DIR', APP_ROOT_DIR . '/vendor/42mate/towel/src/Towel');
 define('APP_CONFIG_DIR', dirname(__FILE__));
-define('APP_DIR', dirname(__FILE__) . '/../Frontend');
+define('APP_DIR', dirname(__FILE__) . '/..');
 define('APP_BASE_URL', '/');
 define('APP_SYS_EMAIL', 'your@email.com');
 
