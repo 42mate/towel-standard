@@ -15,6 +15,11 @@
             "name": "Pintos Ezequiel",
             "email": "ezequiel@42mate.com",
             "homepage": "http://www.42mate.com"
+        },
+        {
+            "name": "Frank Jonatán",
+            "email": "jonatan@42mate.com",
+            "homepage": "http://www.42mate.com"
         }
     ],
     "require": {
@@ -29,6 +34,7 @@
         "symfony/translation": "~2.3",
         "symfony/twig-bridge": "~2.3",
         "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
+        "knplabs/console-service-provider": "dev-master",
         "42mate/towel": "dev-master"
     },
     "autoload": {
