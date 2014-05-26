@@ -3,3 +3,4 @@
 .db
 composer.lock
 vendor
+composer.bu.json
