@@ -5,6 +5,7 @@
     "homepage": "https://github.com/42mate/towel",
     "type": "library",
     "license": "MIT",
+    "minimum-stability" : "dev",
     "authors": [
         {
             "name": "Casiva Agustin",
@@ -24,17 +25,6 @@
     ],
     "require": {
         "php": ">=5.4",
-        "silex/silex": "~1.1",
-        "symfony/browser-kit": "~2.3",
-        "symfony/console": "~2.3",
-        "symfony/css-selector": "~2.3",
-        "symfony/dom-crawler": "~2.3",
-        "symfony/finder": "~2.3",
-        "symfony/locale": "~2.3",
-        "symfony/translation": "~2.3",
-        "symfony/twig-bridge": "~2.3",
-        "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
-        "knplabs/console-service-provider": "dev-master",
         "42mate/towel": "dev-master"
     },
     "autoload": {
