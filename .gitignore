@@ -1,6 +1,7 @@
 .idea
 .DS_Store
 .db
-composer.lock
+*.sql
 vendor
 composer.bu.json
+cache
