@@ -9,12 +9,12 @@
     {% endblock %}
     {% block header_css %}
         <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="/assets/frontend/css/frontend.css" rel="stylesheet" media="screen">
+        <link href="{{ assets_url('Frontend', 'css/frontend.css') }}" rel="stylesheet" media="screen">
     {% endblock %}
     {% block header_js %}
         <script src="/vendor/jquery/jquery.min.js"></script>
         <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/assets/frontend/js/frontend.js"></script>
+        <script src="{{ assets_url('Frontend', 'js/frontend.js') }}"></script>
     {% endblock %}
 </head>
 <body>
