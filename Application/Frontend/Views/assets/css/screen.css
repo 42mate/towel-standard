@@ -1,0 +1,35 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+.control-group {
+  margin-bottom: 10px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+.header {
+  background-color: #f47321;
+  color: #636466;
+  border-bottom: 4px solid #636466;
+  padding: 0px 0px 10px 20px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #636466;
+  padding-top: 20px;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .page {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
