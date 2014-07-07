@@ -1,48 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    {% block head %}
-        <title>Your App</title>
-    {% endblock %}
-    {% block header_meta %}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% endblock %}
-    {% block header_css %}
-        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="{{ assets_url('Frontend', 'css/frontend.css') }}" rel="stylesheet" media="screen">
-    {% endblock %}
-    {% block header_js %}
-        <script src="/vendor/jquery/jquery.min.js"></script>
-        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="{{ assets_url('Frontend', 'js/frontend.js') }}"></script>
-    {% endblock %}
-</head>
-<body>
-
-{% block header %}
-    <header>
-        <h1>Your App</h1>
-    </header>
-{% endblock %}
-
-<div id="messages">
-    {{ render_messages() | raw }}
-</div>
-
-<div id="content">
-    {% block content %}
-    {% endblock %}
-</div>
-
-<footer id="footer">
-    {% block footer %}
-        42mate - 2014
-    {% endblock %}
-</footer>
-
-</body>
-{% block footer_css %}
-{% endblock %}
-{% block footer_js %}
-{% endblock %}
+<html lang="en">
+    <head>
+        {% block head %}
+            <title>Towel Framework</title>
+        {% endblock %}
+        {% block header_meta %}
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        {% endblock %}
+        {% block header_css %}
+            <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        {% endblock %}
+        {% block header_js %}
+            <script src="/vendor/jquery/jquery.min.js"></script>
+            <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="{{ assets_url('Frontend', 'js/frontend.js') }}"></script>
+        {% endblock %}
+        <link href="{{ assets_url('Frontend', 'css/towel.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="{{ assets_url('Frontend', 'css/screen.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="{{ assets_url('Frontend', 'css/print.css') }}" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+        <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    </head>
+    <body>
+        <div class="page container-fluid">
+            <div class="header row">
+                <div class="col-xs-12 col-md-12">
+                    {% block header %}
+                        <header>
+                            <h1>Welcome To Towel</h1>
+                        </header>
+                    {% endblock %}
+                </div>
+            </div>
+            <div id="messages">
+                {{ render_messages() | raw }}
+            </div>
+            <div class="content row">
+                <div class="col-xs-4 col-sm-2"></div>
+                <div class="col-xs-2 col-sm-8">
+                    <div id="content">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2"></div>
+            </div>
+            <div class="footer row">
+                <div class="col-xs-6 col-sm-4"></div>
+                <div class="col-xs-6 col-sm-4">
+                    <footer id="footer">
+                        {% block footer %}
+                            42mate - 2014
+                        {% endblock %}
+                    </footer>
+                </div>
+                <div class="col-xs-6 col-sm-4"></div>
+            </div>
+        </div>
+        {% block footer_css %}
+        {% endblock %}
+        {% block footer_js %}
+        {% endblock %}
+    </body>
 </html>
