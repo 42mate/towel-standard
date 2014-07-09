@@ -2,8 +2,3 @@
 @function assets_url($path) {
   @return '/assets?application=' + $application + '&path=' + $path ';';
 }
-
-//Forms
-.control-group {
-  margin-bottom: 10px;
-}
