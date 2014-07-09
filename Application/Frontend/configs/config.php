@@ -28,9 +28,9 @@ $appConfig = array(
             'default' => array(
                 'driver' => 'pdo_mysql',
                 'host' => 'localhost',
-                'dbname' => 'db_name',
-                'user' => 'db_user',
-                'password' => 'db_pass',
+                'dbname' => 'towel',
+                'user' => 'towel_usr',
+                'password' => 'towel_pass',
                 'charset' => 'utf8',
             ),
             /**
