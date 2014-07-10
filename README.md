@@ -14,7 +14,7 @@ curl -s https://getcomposer.org/installer | php
 After that, run composer to create Towel project's folder structure.
 
 ```
-php composer.phar composer create-project --no-interaction --dev -s dev 42mate/towel-standard /path/to/towel-project-folder
+php composer.php create-project --no-interaction -s dev 42mate/towel-standard
 ```
 
 After that you'll have a fully operational Towel instance to start coding your application.
