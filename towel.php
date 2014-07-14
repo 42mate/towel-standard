@@ -7,7 +7,7 @@ define('WORK_DIR', getcwd());
 require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 if (file_exists(WORK_DIR . '/bootstrap.php')) {
-    require_once WORK_DIR . '/configs/config.php';
+    require_once WORK_DIR . '/config.php';
     $appRun = true;
 } else {
     $appRun = false;
@@ -33,10 +33,11 @@ $silex->register(new Knp\Provider\ConsoleServiceProvider(), array(
 ));
 
 //Init Twig Functions
-require_once APP_FW_DIR . "/twig/twig_functions.inc.php";
+require_once APP_FW_DIR . "/includes/twig/twig_functions.inc.php";
 
 //Init Twig Filters
-require_once APP_FW_DIR . "/twig/twig_filters.inc.php";
+require_once APP_FW_DIR . "/includes/twig/twig_filters.inc.php";
+
 $consoleApp = $silex['console'];
 foreach (scandir(COMMANDS_DIR) as $file) {
     $pathinfo = pathinfo($file);
