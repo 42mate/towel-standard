@@ -6,4 +6,4 @@ require_once APP_FW_DIR . '/bootstrap.php';
 
 //Init Routes
 add_app_routes('Frontend');
-add_app_twig('Frontend');
+add_app_twig('Frontend', true);
