@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/42mate/towel.git",
-                "reference": "a8f7e0c565ecf0d95f9c65eca9d7725e20803466"
+                "reference": "2dd97c4bacbd2921d180c0022992318b7fff2479"
             },
             "dist": {
                 "type": "zip",
