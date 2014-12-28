@@ -11,7 +11,7 @@ if (file_exists(WORK_DIR . '/bootstrap.php')) {
     $appRun = true;
 } else {
     $appRun = false;
-    require_once dirname(__FILE__) . '/vendor/42mate/towel/src/Towel/Console/configs/config.php';
+    require_once dirname(__FILE__) . '/vendor/42mate/towel/src/Towel/Console/Configs/config.php';
 }
 foreach (glob(APP_FW_DIR . "/includes/*.inc.php") as $includeFiles) {
     require_once "$includeFiles";

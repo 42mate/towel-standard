@@ -1,6 +1,5 @@
 <?php
 
-//$appName = basename(dirname(dirname(__FILE__)));
 global $appConfig;
 
 if (basename(dirname(__FILE__)) == 'Towel') {
@@ -17,8 +16,6 @@ define('APP_FW_DIR', APP_ROOT_DIR . '/vendor/42mate/towel/src/Towel');
 define('APP_CONFIG_DIR', dirname(__FILE__));
 define('APPS_DIR', dirname(__FILE__));
 define('APP_BASE_URL', '/');
-//define('COMMANDS_DIR', APP_DIR . '/Command');
-//define('COMMANDS_NAMESPACE', 'Application\\' .  APP_NAME . '\\Command' );
 
 $appConfig = array(
     'doctrine' => array(
